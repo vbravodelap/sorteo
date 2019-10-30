@@ -36,15 +36,21 @@ class ProductController extends Controller
         if($validator->fails()) {
             return $this->error_message(400, $validator->messages());
         }
-
+        
+        $nombre = '';
         $file = $request->file('image');
-        $nombre = time()."_".$file->getClientOriginalName();
-        \Storage::disk('public')->put($nombre, \File::get($file));
+
+        if($file != null) {
+            $nombre = time()."_".$file->getClientOriginalName();
+            \Storage::disk('public')->put($nombre, \File::get($file)); 
+        }
+
+        
 
         $product = Product::create([
             'name'  => $request->name,
             'description'   => $request->description,
-            'image' => $nombre,
+            'image' => $nombre ? $nombre : null,
             'company_id'    => $request->company_id
         ]);
 
