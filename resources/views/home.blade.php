@@ -16,12 +16,10 @@
                         <div class="small-box bg-green">
                             <div class="inner">
                                 <h3>{{$total_inspections}}</h3>
-                                    
-                                <p>Total de inspecciónes</p>
+
+                                <p>Total de pruebas</p>
                             </div>
-                            <div class="icon">
-                                <i class="fas fa-clipboard-list"></i>
-                            </div>
+
                         </div>
                     </div>
 
@@ -29,7 +27,7 @@
                         <div class="small-box bg-blue">
                             <div class="inner">
                                 <h3>{{$total_revisions}}</h3>
-                                        
+
                                 <p>Total de revisiones</p>
                             </div>
                             <div class="icon">
@@ -42,7 +40,7 @@
                         <div class="small-box bg-red">
                             <div class="inner">
                                 <h3>{{$bad_pieces.' piezas'}}</h3>
-                                            
+
                                 <p>Piezas en mal estado encontradas.</p>
                             </div>
                             <div class="icon">
@@ -55,7 +53,7 @@
                         <div class="small-box bg-red">
                             <div class="inner">
                                 <h3>{{$total_pieces.' piezas'}}</h3>
-                                                
+
                                 <p>Total de piezas revisadas.</p>
                             </div>
                             <div class="icon">
@@ -71,5 +69,5 @@
 @stop
 
 @section('js')
-    
+
 @stop
