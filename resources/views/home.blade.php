@@ -17,7 +17,7 @@
                             <div class="inner">
                                 <h3>{{$total_inspections}}</h3>
 
-                                <p>Total de pruebas</p>
+                                <p>Total de inspecciones</p>
                             </div>
 
                         </div>
