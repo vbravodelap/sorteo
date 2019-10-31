@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Conasim',
+    'title' => 'Sorteo 4.0',
 
     'title_prefix' => '',
 
