@@ -70,13 +70,14 @@ class RevisionController extends Controller
         $porcentaje_malas = $piezas_malas * 100 / $total;
 
         $data = [
+            'code'  => 200,
             'piezas_malas' => $piezas_malas,
             'piezas_buenas' => $piezas_buenas,
             'porcentaje_buenas' => $porcentaje_buenas,
             'porcentaje_malas'  => $porcentaje_malas
         ];
 
-        return response()->json($data, 200);
+        return response()->json($data, $data['code']);
     }
 
 }
